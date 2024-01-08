@@ -11,11 +11,8 @@ export default function App() {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 650);
     };
-
     handleResize();
-
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
